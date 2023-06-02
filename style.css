@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-.logo {
-    width: 250px;
+.lead__logo {
+    width: 40px;
 }
 a{
     cursor: pointer;
@@ -16,6 +16,14 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.navbar{
+    display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        gap: 40px;
 }
 
 .nav-list {
@@ -29,9 +37,7 @@ header {
     position: relative;
     content: "";
 }
-@media screen and  (max-width 576px) {
-        flex-wrap: wrap;
-    }
+
 @media (max-width: 500px)
     .logo {
     width: 215px;
@@ -39,7 +45,6 @@ header {
     .navbar{
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
         margin: 0;
         padding: 0;
         gap: 40px;
@@ -64,6 +69,7 @@ nav:first-child {
 #first {
     text-align: center;
 }
+
 
 .para {
     display: flex;
@@ -208,27 +214,49 @@ nav:first-child {
     margin: -10% 0 0 0;
 }
 
-.green-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    line-height: 1.5;
-    flex-wrap: wrap;
+#avant-final{
+    text-align: center;
+    /*margin: 0% 20%;*/
+    color: grey;
 }
 
 .big-green-title {
-    display: flex;
-    justify-content: center;
-    font-size: 3em;
-    align-items: center;
     color: #00b39b;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 60% ;
-    flex-wrap: wrap;
-    gap: 1.5;
-    margin-top: 7%;
+    font-size: 25px;
 }
+
+.country{
+    border-radius: 5px;
+    width: fit-content;
+    border: 1px groove;
+}
+
+.country>img{
+    border-radius: 5px 5px 0 0;
+    width: 320px;
+}
+.country-card-btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+.country-card-btn>button{
+    color: white;
+    background-color: #3d83df;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+.countries{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 5% ;
+}
+
 .big-green-title:first-child{
     margin: 3%;
     padding: 5%;
@@ -248,23 +276,6 @@ nav:first-child {
     line-height: 1.7142857143;
 }
 
-#third-line {
-    display: block;
-    justify-content: flex-start;
-    align-items: flex-start;
-    color: gray;
-    font-size: 17px;
-    line-height: 1.7142857143;
-}
-
-#fourth-line {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    color: gray;
-    font-size: 17px;
-    line-height: 1.7142857143;
-}
 
 .small-grey-para {
     display: block;
@@ -273,42 +284,63 @@ nav:first-child {
 }
 
 /* places css*/
+
 .places {
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border: #e5faf8;
     border-radius: 10em;
     block-size: 25em;
     margin: 15% 15% 13% 13%;
-    padding: 15%% 15% 13% 13%;
+    padding: 15% 15% 13% 13%;
 }
 
 .places:first-child {
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .places:nth-child(2) {
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .places:nth-child(3) {
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .places:nth-child(4) {
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.places:nth-child(5){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.places:nth-child(6){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.places:nth-child(7){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.office__desc {
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 1.6666666667;
+    padding: 1.1111111111em;
+}
 .opening{
     display: flexbox;
     justify-content: center;
@@ -319,62 +351,6 @@ nav:first-child {
     border-radius: 3%;
 }
 
-#btn-warsaw {
-    margin: 0;
-    border-radius: 40px;
-    border: #e5faf8;
-    color: #e5faf8;
-}
-
-#btn-barcelona {
-    border-radius: 40px;
-    border: #e5faf8;
-    color: #e5faf8;
-}
-#btn-munich{
-    border-radius: 40px;
-    border: #e5faf8;
-    color: #e5faf8;
-}
-#btn-istanbul{
-    border-radius: 40px;
-    border: #e5faf8;
-    color: #e5faf8;
-}
-    
-#btn-rome{
-    border-radius: 40px;
-    border: #e5faf8;
-    color: #e5faf8;
-}
-#btn-bologna{
-    border-radius: 40px;
-    border: #e5faf8;
-    color: #e5faf8;
-}
-#btn-curitiba{
-    border-radius: 40px;
-    border: #e5faf8;
-    color: #e5faf8;
-}
-#btn-rio_de_janeiro{
-    border-radius: 40px;
-    border: #e5faf8;
-    color: #e5faf8;
-}
-#btn-mexico{
-    border-radius: 40px;
-    border: #e5faf8;
-    color: #e5faf8;
-}
-#btn-bogota{
-    border-radius: 40px;
-    border: #e5faf8;
-    color: #e5faf8;
-}
-#bogota-img{
-    size: 300 180px;
-}
 
 /* before footer css*/
 
@@ -389,48 +365,22 @@ nav:first-child {
     flex-wrap: wrap;
     font-weight: lighter;
 }
-.See-all-current-openings{
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    outline: 0;
-    border: 0;
-    border-radius: 4px;
-    padding: 1.1666666667em 1.5em;
-    background: #3d83df;
-    font-family: Roboto,Arial,sans-serif;
-    line-height: 1em;
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: .04em;
-    font-size: .75rem;
-    text-align: center;
-    text-decoration: none!important;
-    text-transform: uppercase;
-}
+
+
 #See-all-current-openings{
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    outline: 0;
-    border: 0;
-    border-radius: 4px;
-    padding: 1.1666666667em 1.5em;
-    background: #3d83df;
-    font-family: Roboto,Arial,sans-serif;
-    line-height: 1em;
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: .04em;
-    font-size: .75rem;
     text-align: center;
-    text-decoration: none!important;
-    text-transform: uppercase;
+    color: white ;
+    background-color: #3d83df;
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 15%;
 }
-/* footer css*/
+/* footer's css*/
 .leaders{
     margin-left: 25em;
-    padding
+
     display: block;
     justify-content: center;
     align-items: center;   
@@ -443,4 +393,39 @@ nav:first-child {
     margin-right: 5em;
     flex-wrap: nowrap;
     color: #3d83df;
+}
+footer{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    padding: 1%;
+}
+span{
+    color: #3d83df;
+}
+@media screen and (max-width=600px){
+    #green{
+        display: block;
+        text-align: center;
+        height: fit-content;
+    }
+    .green-cards{
+        display: block;
+    }
+    .green-para{
+        width: fit-content;
+    }
+    #cards{
+        display: block;    
+        text-align: center;
+        height: fit-content;  
+    }
+    .card{
+        margin: 5%;
+        padding: 5%;
+        display: block;
+        text-align: center;
+        height: fit-content;
+    }
 }
